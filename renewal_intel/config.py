@@ -10,7 +10,7 @@ RENEWAL_WINDOW_DAYS = 90  # look-ahead window for upcoming renewals
 RENEWAL_CUTOFF = REFERENCE_DATE + timedelta(days=RENEWAL_WINDOW_DAYS)
 
 # ── Data directory ────────────────────────────────────────────────────────
-DATA_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 ACCOUNTS_CSV      = DATA_DIR / "accounts.csv"
 USAGE_CSV          = DATA_DIR / "usage_metrics.csv"
 SUPPORT_CSV        = DATA_DIR / "support_tickets.csv"
