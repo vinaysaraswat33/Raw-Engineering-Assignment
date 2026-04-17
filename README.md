@@ -15,8 +15,8 @@
 ```
 DATA SOURCES → INGEST → RECONCILE → FEATURES → RISK SCORE → LLM EXPLAIN → INSIGHTS
      │                                                                         │
-     └─── accounts.csv, usage_metrics.csv, support_tickets.csv,               │
-          nps_responses.csv, csm_notes.txt, changelog.md                       │
+     └─── data/accounts.csv, data/usage_metrics.csv, data/support_tickets.csv,               │
+          data/nps_responses.csv, data/csm_notes.txt, data/changelog.md                       │
                                                                                ▼
                                                                      STREAMLIT DASHBOARD
 ```
@@ -157,13 +157,14 @@ renewal_intelligence_takehome/
   README.md
   ASSIGNMENT.md              # Original assignment brief
 
-  # Data files
-  accounts.csv               # 120 accounts with contract details
-  usage_metrics.csv          # 6 months of product usage
-  support_tickets.csv        # Support ticket history
-  nps_responses.csv          # NPS survey responses
-  csm_notes.txt              # Unstructured CSM call notes (messy)
-  changelog.md               # Product changelog (Q4 2025 – Q1 2026)
+  # Data directory
+  data/
+    accounts.csv               # 120 accounts with contract details
+    usage_metrics.csv          # 6 months of product usage
+    support_tickets.csv        # Support ticket history
+    nps_responses.csv          # NPS survey responses
+    csm_notes.txt              # Unstructured CSM call notes (messy)
+    changelog.md               # Product changelog (Q4 2025 – Q1 2026)
 
   # Core engine
   renewal_intel/
