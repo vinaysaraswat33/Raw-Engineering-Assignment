@@ -1,0 +1,24 @@
+# Environments
+.env
+.venv
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Streamlit
+# Note: .streamlit/config.toml is okay to commit, but ignore temp configs
+.streamlit/*.json
+
+# Project specific outputs/logs
+test_results.txt
+test_output.txt
+
+# OS generated files
+.DS_Store
+Thumbs.db
